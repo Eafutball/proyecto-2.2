@@ -1,0 +1,289 @@
+.reviews-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section-title {
+    color: #333;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.card {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.review-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.avatar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.reviews {
+    flex: 2;
+    margin-left: 20px;
+    text-align: left;
+}
+
+/* Estilos para la reseña */
+.review {
+    border: 1px solid #ddd; /* Borde más sutil */
+    border-radius: 15px; /* Bordes redondeados más suaves */
+    padding: 20px; /* Mayor padding para un mejor espaciado */
+    margin-bottom: 15px; /* Espaciado entre reseñas */
+    background: #ffffff; /* Fondo blanco para mejor contraste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para efecto de profundidad */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transición suave para interacciones */
+}
+
+.review:hover {
+    transform: translateY(-5px); /* Efecto de elevación en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+.review .stars {
+    font-size: 1.5em; /* Tamaño de fuente ajustado para las estrellas */
+    color: #f39c12; /* Color dorado para las estrellas */
+    margin-bottom: 10px; /* Espaciado entre estrellas y comentario */
+}
+
+.review p {
+    font-size: 1em; /* Tamaño de fuente para el comentario */
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+    line-height: 1.5; /* Mejorar la legibilidad con mayor espacio entre líneas */
+    margin: 0; /* Eliminar margen para mantener el espaciado controlado */
+}
+
+
+.stars {
+    margin-bottom: 10px;
+}
+
+.stars i {
+    color: #ddd; /* Color gris para estrellas vacías */
+    margin-right: 5px; /* Espacio entre estrellas */
+    font-size: 1.5rem; /* Tamaño de las estrellas */
+}
+
+.stars .filled {
+    color: #ffd700; /* Color dorado para estrellas llenas */
+}
+
+.review.bg-success {
+    background-color: #28a745; /* Verde para más de 5 reseñas */
+    color: #fff;
+}
+
+.review.bg-warning {
+    background-color: #ffc107; /* Amarillo para 3-5 reseñas */
+    color: #333;
+}
+
+.review.bg-danger {
+    background-color: #dc3545; /* Rojo para menos de 3 reseñas */
+    color: #fff;
+}
+
+
+/* Estilo para el título de la sección */
+.box-title {
+    font-size: 1.75em; /* Tamaño del título */
+    font-weight: bold; /* Negrita para el título */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+/* Estilo para el subtítulo de la sección */
+.section-subtitle {
+    font-size: 1.1em; /* Tamaño del subtítulo */
+    color: #666; /* Color del texto */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin-bottom: 20px; /* Espacio debajo del subtítulo */
+}
+
+/* Contenedor de la lista de reseñas */
+.review-list {
+    display: flex; /* Disposición en línea */
+    flex-direction: column; /* Disposición en columna */
+    gap: 15px; /* Espacio entre las reseñas */
+}
+
+/* Estilo para cada reseña */
+.review {
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-left: 5px solid transparent; /* Espacio para el borde de color */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Colores para los bordes de las reseñas */
+.review.bg-success {
+    border-left-color: #28a745; /* Verde para reseñas positivas */
+}
+
+.review.bg-warning {
+    border-left-color: #ffc107; /* Amarillo para reseñas neutrales */
+}
+
+.review.bg-danger {
+    border-left-color: #dc3545; /* Rojo para reseñas negativas */
+}
+
+/* Estilo para las estrellas */
+.review .stars {
+    font-size: 1.5em; /* Tamaño de las estrellas */
+    color: #f39c12; /* Color dorado */
+    margin-bottom: 10px; /* Espacio debajo de las estrellas */
+}
+
+/* Estilo para el texto de la reseña */
+.review p {
+    font-size: 1em; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    line-height: 1.5; /* Altura de línea para legibilidad */
+    margin: 0; /* Sin margen adicional */
+}
+
+/* Efecto de hover para cada reseña */
+.review:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+    transform: translateY(-5px); /* Efecto de elevación en hover */
+}
+
+
+.table-product {
+    width: 100%;
+    border-collapse: collapse; /* Asegura que los bordes no se dupliquen */
+    background-color: #f5f5f5; /* Fondo blanco para la tabla */
+}
+
+/* Encabezados de la tabla */
+.table-product th {
+    background-color: #f5f5f5; /* Color de fondo de los encabezados */
+    color: #333; /* Color del texto */
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alineación del texto */
+    border-bottom: 2px solid #ddd; /* Línea debajo de los encabezados */
+    font-weight: bold; /* Negrita para los encabezados */
+}
+
+/* Celdas de la tabla */
+.table-product td {
+    padding: 12px; /* Espaciado interno */
+    color: #555; /* Color del texto */
+    border-bottom: 1px solid #ddd; /* Línea debajo de las celdas */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+/* Fila de la tabla */
+.table-product tr:nth-child(even) {
+    background-color: #f5f5f5; /* Color de fondo para filas pares */
+}
+
+/* Efecto hover para filas de la tabla */
+.table-product tr:hover {
+    background-color: #f5f5f5; /* Color de fondo cuando se pasa el ratón */
+}
+
+
+
+.btn {
+    display: inline-flex; /* Flexbox para alinear el contenido */
+    align-items: center; /* Centra verticalmente el icono y el texto */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    padding: 12px 20px; /* Espaciado interno más ajustado */
+    font-size: 1em; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    color: #fff; /* Color del texto */
+    background-color:hsl(210, 100%, 15%); /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 30px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: all 0.3s ease; /* Transición suave */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilo para el icono dentro del botón */
+.btn i {
+    margin-right: 8px; /* Espacio a la derecha del icono */
+    font-size: 1.2em; /* Tamaño del icono */
+}
+
+/* Efecto de hover */
+.btn:hover {
+    background-color: hsl(208, 75%, 55%);; /* Color de fondo más oscuro en hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* Efecto de enfoque */
+.btn:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Sombra azul alrededor del botón */
+}
+
+/* Efecto de desactivado */
+.btn:disabled {
+    background-color: #c0c0c0; /* Fondo gris */
+    color: #6c757d; /* Texto gris */
+    cursor: not-allowed; /* Cursor de no permitido */
+    box-shadow: none; /* Sin sombra */
+    opacity: 0.65; /* Reduce la opacidad */
+}
+
+
+
+/* Estilo para el encabezado de la sección */
+.box-title {
+    font-size: 1.8em; /* Tamaño de la fuente más grande para destacar el título */
+    font-weight: 700; /* Negrita para el título */
+    color: #333; /* Color de texto oscuro para buena legibilidad */
+    margin-bottom: 16px; /* Espacio inferior para separar del contenido siguiente */
+    padding-bottom: 8px; /* Espacio entre el texto y el borde */
+    text-align: center;
+}
+
+/* Estilo para la descripción de la sección */
+.section-description {
+    font-size: 1em; /* Tamaño de fuente estándar */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    color: #666; /* Color de texto gris para una apariencia suave */
+    margin-bottom: 24px; /* Espacio inferior para separar del contenido siguiente */
+    padding: 0 10px; /* Espaciado lateral para evitar que el texto toque los bordes */
+    text-align: justify;
+}
+
+/* Opcional: Añadir un poco de estilo al contenedor de la sección */
+.section-container {
+    padding: 20px; /* Espaciado interno para el contenedor */
+    background-color: #f5f5f5; /* Fondo gris claro para el contenedor */
+    border-radius: 8px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenedor */
+}
+
+
